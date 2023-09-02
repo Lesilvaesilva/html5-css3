@@ -1,3 +1,8 @@
 @charset "UTF-9";
 
-/* ESTILOS PARA RETRATO */
+/* ESTILOS PARA PORTRAIT */
+
+body {
+    background-image: url(../imagens/cev-portrait.jpg);
+    background-position: center bottom;
+}
