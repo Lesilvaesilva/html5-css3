@@ -4,18 +4,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Media query</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
     <link rel="stylesheet" href="estilos/style.css">
 </head>
 <body>
     <header>
         <h1>Notícias do Mengão</h1>
-        <menu>
+        <span id="burguer" class="material-icons" onclick="clickMenu()">menu</span>
+        <menu id="itens">
             <ul>
-                <li><a href="#">Gols</a></li>
                 <li><a href="#">Classificção</a></li>
-                <li><a href="#">Jogos anteriores</a></li>
-                <li><a href="#">Galeria</a></li>
                 <li><a href="#">Copa do brasil</a></li>
+                <li><a href="#">Galeria</a></li>
+                <li><a href="#">Gols</a></li>
+                <li><a href="#">Jogos anteriores</a></li>
             </ul>
         </menu>
     </header>
@@ -32,5 +35,14 @@
             <p>E os "contras"? Nesta formação, o meio de campo com Allan, Gerson e Victor Hugo foi o grande calcanhar de Aquiles. O garoto, teoricamente o principal responsável pela criação do setor, apareceu muito pouco, e os outros não conseguiram dar o suporte ofensivo que o time precisava. Por isso coletivamente o Flamengo não funcionou e tentou muitas transições diretas da defesa para o ataque, principalmente nas bolas longas de Léo Pereira.</p>
         </article>
     </main>
+    <script>
+        function clickMenu() {
+            if (itens.style.display == 'block') {
+                itens.style.display = 'none'
+            } else {
+                itens.style.display = 'block'
+            }
+        }
+    </script>
 </body>
 </html>
